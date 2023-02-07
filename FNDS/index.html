@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>Fake News Detection System</title>
+<link href="https://drive.google.com/uc?id=1f4cLFXaeJS5ycymK4JYHm2dzhxVt-PXu" rel="stylesheet">
+</head>
+
+<body>
+<style>
+  .topnav a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+	background-color: black;
+	color: white;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+	background-color: black;
+	color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+	display: none;
+	position: center;
+  }
+  .topnav-centered  {
+	float: none;
+	top: 80%;
+	left: 50%;
+	 
+  }
+</style>
+<section class="header">
+
+<form>
+<div class="text-box">
+<h2>Welcome to Fake News Detection System!</h2>
+<h6>Due to the exponential growth of information online, it is becoming impossible to decipher the true from the false. Thus, this leads to
+the problem of fake news. This system considers previous and current methods for fake news detection in textual formats.</h6>
+</div>
+</form>
+</section>
+<link href="https://drive.google.com/uc?id=1f4cLFXaeJS5ycymK4JYHm2dzhxVt-PXu" rel="stylesheet" href="htt <div class="topnav-centered">
+<div class="topnav" id="myTopnav">
+  <a href="{{url_for('home')}}" class="active">Home</a>
+  <a href="{{url_for('about')}}">About Us</a>
+  <a href="{{url_for('aboutSys')}}">About The System</a>
+  <a href="{{url_for('contact')}}">Contact Us</a>
+  <a href="{{url_for('login')}}">Login</a>
+</div>
+<section class="others">
+<h3>Others</h3>
+<p>We are here for you. Thank you for using our website.</p>
+<div class="row">
+<div class="others-col">
+<h4>How to use this system?</h4>
+<p>This system is designed with a user-friendly environment. The user has to just sign up with a unique username and strong password. Visitor needs to type the news heading in the search bar and after a few seconds the user will be provided with the result.</p>
+</div>
+
+<div class="others-col">
+<h4>About Us</h4>
+<p>We are the first year students at Parul University and Fake News Detection System was our second semester project.</p>
+</div>
+
+<div class="others-col">
+<h4>About System</h4>
+<p>The concept of deception
+detection in social media is particularly new and there is
+ongoing research in hopes that scholars can find more
+accurate ways to detect false information in this
+booming, fake-news-infested domain.</p>
+</div>
+</div>
+</section>
+
+		<section class="search-slide">
+			<form action="{{url_for('predict')}}" method="POST" >
+				<div class="form-box">
+					<h1>Find Your True News!</h1>
+					<input type="text" name="news" class="search-field" placeholder="  Search">
+					<button class="search-btn" type="submit">Confirm</button>
+				</div>
+			</form>
+		</section>
+
+</body>
+</html>

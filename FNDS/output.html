@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <style>
+            body{
+              background-image:linear-gradient(rgba(0,0,0,1.5),rgba(0,0,0,0.5)), url('https://drive.google.com/uc?id=1zBzkNOriCERv9hP5SxJRSAZiiIE152n_');
+			  margin:0;
+	          padding:0;
+			  }
+              h1{
+               color:white;
+			   font-family:tahoma;
+			   
+               }
+            	.form-box
+{
+	background:rgba(0,0,0,0.5);
+	padding:70px;
+	border-radius:15px;
+}
+		.search-slide
+{
+	height:70vh;
+	background-size:cover;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-family:tahoma;
+	padding: 70px;
+	margin: 20px;
+}   
+	 .news{
+	 color: yellow;
+	 }
+	 .home-page
+{
+	height:50px;
+	width:150px;
+	background:#ffeb3b;
+	border:none;
+	color:#000;
+	border-radius:25px;
+	text-align: center; 
+    margin: 0;
+    position: center;
+    top: 100%;
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);	
+}
+.home-page:hover{
+	background:#ffc107;
+	cursor:pointer;
+}
+
+        </style>
+            
+    </head>
+	<body>
+         
+        <center>
+		<section class="search-slide">
+		<div class="form-box">
+		<h1 font-family: Arial, Helvetica, sans-serif; color:"white">RESULT!</h1>
+        <div class="news">
+		{%
+			print(prediction)
+		%}
+		</div>
+		</div>
+		</section>
+		<form>
+		<button class="home-page" type="button"><a href="{{url_for('home')}}">Go To HomePage</a></button>
+		</form>
+		
+     </center>
+	</body>
+</html>

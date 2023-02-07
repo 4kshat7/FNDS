@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color:gray;
+            }
+             .text-box
+{
+	background:white;
+	padding:10px;
+	border-radius:50px;
+}
+.text
+{
+    color:white;
+    font-family:arial;
+}
+.search-btn
+{
+	height:50px;
+	width:150px;
+	background:#ffeb3b;
+	border:none;
+	color:#000;
+	border-radius:25px;
+}
+.search-btn:hover{
+	background:#ffc107;
+	cursor:pointer;
+}
+.search-slide
+{
+	height:100vh;
+	background-size:cover;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-family:tahoma;
+}
+.form-box
+{
+	background:rgba(0,0,0,0.5);
+	padding:70px;
+	border-radius:15px;
+    text-align: center;
+}
+        </style>
+        <center>
+             
+            <section class="search-slide">
+            <form method="POST" action="/register">
+            <section class="search-slide">
+                <div class="form-box">
+            <div class="text">
+                <label for="fname" ><b>First Name:</b></label>
+                <input type="text" class="text-box" > <placeholder="Enter First Name" name="fname" required>
+                    <label for="lname" ><b>Last Name:</b></label>
+                <input type="text" class="text-box" > <placeholder="Enter Last Name" name="lname" required>
+                    <br>
+                    <br>
+                    <label for="email" ><b>Email Address:</b></label>
+                <input type="email" name="demail" class="text-box" > <placeholder="Enter Email" required>
+                    <br>
+                    <br> 
+                    <label for="num" ><b>Contact Number:</b></label>
+                <input type="text" class="text-box" > <placeholder="Enter Contact Number" name="num" required>
+                      <br>
+                      <br>
+                <label for="psw" ><b>Password:</b></label>
+                <input type="password" name="dpass" class="text-box" > <placeholder="Enter Password" required>
+              <br>
+              <br>
+              
+              <br>
+                <input type="submit" class="search-btn" value='Login'> 
+        </form>
+        </center>
+    </head>
+
+</html>

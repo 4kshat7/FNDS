@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <style>
+            body{
+              background-color:gray;
+			  margin:0;
+	          padding:0;
+			  }
+              .search-slide
+{
+	height:100vh;
+	background-size:cover;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-family:tahoma;
+}
+.form-box
+{
+	background:rgba(0,0,0,0.5);
+	padding:70px;
+	border-radius:15px;
+    text-align: center;
+}
+.text-box
+{
+	background:white;
+	padding:10px;
+	border-radius:50px;
+}
+.text
+{
+    color:white;
+    font-family:arial;
+}
+.search-btn
+{
+	height:50px;
+	width:150px;
+	background:#ffeb3b;
+	border:none;
+	color:#000;
+	border-radius:25px;
+}
+.search-btn:hover{
+	background:#ffc107;
+	cursor:pointer;
+}
+        </style>
+        <body>
+            <center>
+                <section class="search-slide">
+                    <div class="form-box">
+                        <div class="text">
+            <form>
+            <label for="psw" ><b>New Password:</b></label>
+          <input type="password" class="text-box" > <placeholder="Enter Password" name="psw" required>
+        <br>
+        <br>
+        <label for="psw" ><b>Confirm Password:</b></label>
+          <input type="password" class="text-box" > <placeholder="Enter Password" name="psw" required>
+              <br>
+              <br>
+            <button type="submit" class="search-btn"><a href="{{url_for('login')}}"></a>Change Password</button>
+            </div>
+        </div>
+            </section>
+        </center>
+    </form>

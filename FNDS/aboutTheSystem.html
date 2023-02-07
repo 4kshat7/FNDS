@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <style>
+          body{
+            background-image:linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.5)),url(https://drive.google.com/uc?id=1TBKVv4gd6kd0fYReOjj35KKb3CQE6_6W);
+          }
+          p{
+            font-family:arial;
+          }
+            .topnav a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+	background-color: black;
+	color: white;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+	background-color: black;
+	color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+	display: none;
+	position: center;
+  }
+  h2{
+    font-family:tahoma;
+  }
+   
+            </style>
+    </head>
+    <body>
+    <div class="topnav" id="myTopnav">
+        <a href="{{url_for('home')}}" >Home</a>
+        <a href=" {{url_for('about')}}">About Us</a>
+        <a href="{{url_for('aboutSys')}}" class="active">About The System</a>
+         
+        <a href="{{url_for('contact')}}" >Contact Us</a>
+        <a href="{{url_for('login')}}">Login</a>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <center>
+        <h2>FAKE NEWS DETECTION SYSTEM!</h2>
+        <br>
+      <p>
+        The advent of the World Wide Web and the rapid adoption of social media platforms (such as Facebook and Twitter)<br> paved the way for information dissemination that has never been witnessed in the human history before.<br> With the current usage of social media platforms, consumers are creating and sharing more information than ever before,<br> some of which are misleading with no relevance to reality.<br> Automated classification of a text article as misinformation or disinformation is a challenging task.<br> Even an expert in a particular domain has to explore multiple aspects before giving a verdict<br> on the truthfulness of an article. In this work,<br> we propose to use machine learning ensemble approach for automated classification of news articles.<br> Our study explores different textual properties that can be used to distinguish<br> fake contents from real. By using those properties,<br> we train a combination of different machine learning algorithms using various ensemble methods and evaluate their performance on 4 real world datasets.<br> Experimental evaluation confirms the superior performance of our proposed ensemble learner<br> approach in comparison to individual learners.
+      </p>
+      <p>
+        In the current fake news corpus,<br> there have been multiple instances where both supervised and unsupervised learning algorithms are used to classify text.<br> However, most of the literature focuses on specific datasets or domains,<br> most prominently the politics domain. Therefore, the algorithm trained works best on a particular type of article’s<br> domain and does not achieve optimal results when exposed to articles from other domains.<br> Since articles from different domains have a unique textual structure,<br> it is difficult to train a generic algorithm that works best on all particular news domains.<br> In this paper, we propose a solution to the fake news detection problem using <br>the machine learning ensemble approach.
+      </p>
+    </center>
+    </body>
+</html>

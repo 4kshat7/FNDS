@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <style>
+          body{
+            background-image:linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.5)), url(https://drive.google.com/uc?id=1t8wjvuA8YLZpzzbYXdhLYIRVME1_yugA);
+          }
+          img {
+  border-radius: 50%;
+  height: 250px;
+ width: 250px;
+          }
+  .pic1 {
+  float: left;
+  clear: left;
+ }
+   .pic2{
+  float: none;
+  clear: none;
+  object-position: 50% 50%;
+}
+.pic3{
+  float: right;
+  clear: right;
+          }
+            .topnav a {
+                float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+	background-color: black;
+	color: white;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+	background-color: black;
+	color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+	display: none;
+	position: center;
+  }
+  .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+ 
+figcaption {
+  padding: 0.5em;
+  border: thin silver solid;
+  border-bottom: none;
+}
+p{
+  color:black;
+  font-family:arial;
+}
+h3{
+  font-family:tahoma;
+  color: black;
+}
+h2{
+  font-family:tahoma;
+  color: black;
+}
+    
+            </style>
+    </head>
+    <body>
+    <div class="topnav" id="myTopnav">
+        <a href="{{url_for('home')}}" >Home</a>
+        <a href="{{url_for('about')}}" class="active">About Us</a>
+        <a href="{{url_for('aboutSys')}}">About The System</a>
+         
+        <a href="{{url_for('contact')}}" >Contact Us</a>
+        <a href="{{url_for('login')}}">Login</a>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <center>
+      <p>
+           'Fake News Detection System' is a software designed to overcome the spread of fake news all across the globe. As a consumer of Social Media and Internet we all come across various kinds of news in our day-to-day life and being humans we don't know if the news is false or true. Whatever we see on the Internet can not be always true and believing on fake news can lead to many consequences and can affect many lives.
+           To prevent all this this system came into existence and with the help of Machine Learning Classifiers, Python numPy,Python Pandas, skLearn etc. our system is able to give the results of any news upto 99% of accuracy.</p>
+          <p> Our vision through this project is to make people more aware about the wide spread of fake news all around on a daily basis. These fake news can sometimes attack a person or political party for a personal agenda which can have some serious consequences and as a system that detects whether the news is real or fake we take this responsibility to make people aware and differentiate between all the kinds of news that they come across on Internet.</p>
+          <p> We are the first year students at Parul University,Vadodra,Gujarat. This system is our project for the second semester and as a project team we are very grateful to be able to work on this project and complete it successsfully. It was a great opportunity to work and learn on this project so much about the used technologies.</p>
+          <p> Providing with true results is what our mission is and to make users life on the Internet a better place by providing them with true news that they deserve to know. As humans we cannot know just by reaing the article or the heading the news that whether its true or not and that causes many confusion among people. These confusions caused by fake news can be very afftective in many ways and its prevention is very necessary but people often dont know where they can find out that whether the news is true or not but with the help of Machine Learning Classifiers our software is trying to prevent it. </p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2><b><u>DEVELOPERS OF THE SYSTEM</u></b></h2>
+<br>
+<br>
+<br>
+<br>
+          <div class="row">
+            <div class="column">
+          <figure>
+        <img src="https://drive.google.com/uc?id=1xgthOJ_xxKzlrjbaiWV0Lgx5Dc_XkLyD" alt="Avatar"  > 
+        <figcaption>
+           <b> AKSHITA SHARMA <br> FRONTEND DESIGNING</b>
+        </figcaption>
+    </figure>
+</div>
+<div class="column">
+
+    <figure>
+        <img src="https://drive.google.com/uc?id=1PKA1B-cqAxIfHkQlnNYRs4RP11pZM2ty" alt="Avatar"  > 
+        <figcaption>
+            <b> AKSHAT MISTRY <br> BACKEND CODING </b>
+        </figcaption>
+    </figure>
+</div>
+<div class="column ">
+    <figure>
+        <img src="https://drive.google.com/uc?id=1_87QZSHwlnApaTgDTkPPI1I22SzCPr9v" alt="Avatar"  > 
+        <figcaption>
+            <b> ADITYA KUMAR PAN <br> DATABASE MANAGEMENT</b>
+        </figcaption>
+    </figure> 
+</div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h3>THANK YOU!<br> WE HOPE YOU FOUND YOUR TRUE NEWS.</h3>
+          <br>
+          <br>
+          <br>
+          <br>
+    </center>
+    </body>
+</html>
